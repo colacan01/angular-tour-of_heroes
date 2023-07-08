@@ -25,3 +25,19 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## ts/html은 한세트로 작동함
+html은 화면레이아웃 템플릿
+ts는 기능넣음
+
+이중 중괄호({{}})는 Angular가 제공하는 문자열 바인딩(interpolation binding) 문법
+
+## ng generate component [ component 명 ]
+ng generate component heroes를 app-root에서 실행하면 "src > app > heroes" 경로가 생성됨
+
+## 컴포넌트 내용
+ngOnInit은 라이프싸이클 후킹 함수 입니다. Angular는 컴포넌트를 생성한 직후에 ngOnInit를 호출합니다. 그래서 컴포넌트를 초기화하는 로직은 이 메소드에 작성하는 것이 좋습니다.
+
+## Study 
+튜토리얼 > 4.서비스 추가하기 > 메시지 표시하기 부터 시작
