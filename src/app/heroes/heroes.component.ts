@@ -9,7 +9,7 @@ import { MessageService } from '../message.service';
   styleUrls: ['./heroes.component.css']
 })
 export class HeroesComponent implements OnInit{
-  selectedHero?: Hero;          //selectedHero 변수 유형을 설정하고, nullable--> ?
+  // selectedHero?: Hero;          //selectedHero 변수 유형을 설정하고, nullable--> ?
   heroes: Hero[] = [];
 
   constructor(private heroService: HeroService, private messageService: MessageService) {   
@@ -19,10 +19,10 @@ export class HeroesComponent implements OnInit{
     this.getHeroes();
   }
 
-  onSelect(hero: Hero): void {  //함수가 호출되면 Hero 변수형의 hero가 설정되고 selectedHero 변수에 전달된다
-    this.selectedHero = hero;
-    this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
-  }
+  // onSelect(hero: Hero): void {  //함수가 호출되면 Hero 변수형의 hero가 설정되고 selectedHero 변수에 전달된다
+  //   this.selectedHero = hero;
+  //   this.messageService.add(`HeroesComponent: Selected hero id=${hero.id}`);
+  // }
 
   getHeroes(): void {
     // this.heroes = this.heroService.getHeroes();

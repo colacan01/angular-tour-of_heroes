@@ -304,5 +304,10 @@
 
 <!-- Toolbar -->
 <h1>{{title}}</h1>
-<app-heroes></app-heroes> <!--heroes.component의 selector를 사용해서  call 한다 -->
+<nav>
+  <a routerLink="/dashboard">Dashboard</a>
+  <a routerLink="/heroes">Heroes</a>
+</nav>
+<!-- <app-heroes></app-heroes> heroes.component의 selector를 사용해서  call 한다 -->
+<router-outlet></router-outlet>
 <app-messages></app-messages>

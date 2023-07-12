@@ -40,4 +40,5 @@ ng generate component heroes를 app-root에서 실행하면 "src > app > heroes"
 ngOnInit은 라이프싸이클 후킹 함수 입니다. Angular는 컴포넌트를 생성한 직후에 ngOnInit를 호출합니다. 그래서 컴포넌트를 초기화하는 로직은 이 메소드에 작성하는 것이 좋습니다.
 
 ## Study 
-튜토리얼 > 4.서비스 추가하기 > 메시지 표시하기 부터 시작
+튜토리얼 > 5.네비게이션추가하기 상세하게 다시 리뷰할 것
+
