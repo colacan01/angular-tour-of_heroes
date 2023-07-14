@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Hero } from '../hero';   //객체 유형 import
 import { HeroService } from '../hero.service';
-import { MessageService } from '../message.service';
+// import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-heroes',
@@ -12,9 +12,12 @@ export class HeroesComponent implements OnInit{
   // selectedHero?: Hero;          //selectedHero 변수 유형을 설정하고, nullable--> ?
   heroes: Hero[] = [];
 
-  constructor(private heroService: HeroService, private messageService: MessageService) {   
-  }
+  // constructor(private heroService: HeroService, private messageService: MessageService) {   
+  // }
 
+  constructor(private heroService: HeroService) {   
+  }
+  
   ngOnInit(): void {
     this.getHeroes();
   }
